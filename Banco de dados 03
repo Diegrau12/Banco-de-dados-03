@@ -1,0 +1,17 @@
+--select 
+   -- alunos.id,
+ --   alunos.nome,
+  --  disciplinas.nome,
+ --   notas_alunos.nota
+--from alunos
+--join notas_alunos on (notas_alunos.id_alunos = alunos.id)
+--join disciplinas on (notas_alunos.id_disciplinas = disciplinas.id)
+
+select 
+    alunos.id,
+    alunos.nome,
+    financeiro.valor
+from financeiro
+join alunos on (alunos.id = financeiro.id_aluno)
+
+
